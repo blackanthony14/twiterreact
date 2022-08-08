@@ -1,0 +1,291 @@
+.register{
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0;
+}
+.registro{
+    margin-left: 0.5px;
+    border: 2px solid rgb(255, 0, 0);
+}
+.fotografia{
+    margin-right: 0.5px;
+    border: 2px solid rgb(0, 8, 255);
+}
+.foto{
+    height: 100%;
+    width: 100%;
+    
+}
+/* Parte del CSS probando */
+
+@font-face {
+    font-family: TwitterChirpExtendedHeavy;
+    src: url(https://abs.twimg.com/fonts/v1/chirp-extended-heavy-web.woff2)
+      format("woff2");
+    src: url(https://abs.twimg.com/fonts/v1/chirp-extended-heavy-web.woff)
+      format("woff");
+    font-weight: 800;
+    font-style: "normal";
+    font-display: "swap";
+  }
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/v2/chirp-regular-web.woff2)
+      format("woff2");
+    src: url(https://abs.twimg.com/fonts/v2/chirp-regular-web.woff) format("woff");
+    font-weight: 400;
+    font-style: "normal";
+    font-display: "swap";
+  }
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/v2/chirp-medium-web.woff2)
+      format("woff2");
+    src: url(https://abs.twimg.com/fonts/v2/chirp-medium-web.woff) format("woff");
+    font-weight: 500;
+    font-style: "normal";
+    font-display: "swap";
+  }
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/v2/chirp-bold-web.woff2) format("woff2");
+    src: url(https://abs.twimg.com/fonts/v2/chirp-bold-web.woff) format("woff");
+    font-weight: 700;
+    font-style: "normal";
+    font-display: "swap";
+  }
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/v2/chirp-heavy-web.woff2) format("woff2");
+    src: url(https://abs.twimg.com/fonts/v2/chirp-heavy-web.woff) format("woff");
+    font-weight: 800;
+    font-style: "normal";
+    font-display: "swap";
+  }
+
+  .loginPage__container{
+      display: flex;
+      height: 100vh;
+      width : 100%;
+      /* margin-left: -160px; */
+  }
+
+  .loginPage__rightSide{
+      margin-top: 45px;
+      margin-left: 30px;
+  }
+  .loginPage__leftSide{
+      background: url(fotos/background.png);
+      background-size: 70%;
+      width: 1000px;
+      margin-left: -160px;
+  }
+
+  .rightSide__bigText{
+      margin-top: -40px;
+      font-size: 66px;
+      color: #ffffff;
+      font-family: TwitterChirpExtendedHeavy;
+      margin-left: 80px;
+      
+  }
+  .rightSide__bigText2{
+    margin-top: -120px;
+    font-size: 66px;
+    color: #ffffff;
+    font-family: TwitterChirpExtendedHeavy;
+    margin-left: 50px;
+    
+}
+  .rightSide__smallText{
+      margin-top: -60px;
+      font-size: 33px;
+      color: #ffffff;
+      font-family: TwitterChirpExtendedHeavy;
+      margin-left: 100px;
+  }
+  .rightSide__smallText2{
+    margin-top: -80px;
+    font-size: 33px;
+    color: #ffffff;
+    font-family: TwitterChirpExtendedHeavy;
+    margin-left: 50px;
+}
+
+ #bird_image{
+     width: 346.74px;
+     height: 281.81px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 200px;
+ }
+ .rightSide__image img{
+     width: 42.57px;
+     height: 34.6px;
+     margin-left: 100px;
+
+ }
+ .rightSide__image2 img{
+    width: 42.57px;
+    height: 34.6px;
+    margin-left: -10px;
+
+}
+
+ /* Styling login Area */
+
+ .loginBtn{
+     width: 300px;
+     height: 40px;
+     padding: 0px 16px;
+     border-radius: 30px;
+     font-family: TwitterChirp;
+     border: none;
+     font-size: 14px;
+     letter-spacing: 0.25px;
+     vertical-align: middle;
+     background: white;
+ }
+
+ .login__or{
+     width: 300px;
+     margin-top: 0px;
+     margin-bottom: -7px;
+     margin-left: 100px;
+ }
+
+ .login__or p{
+     font-family: TwitterChirp;
+     text-align: center;
+     color: #e7e9ea;
+     display: flex;
+     flex-direction: row;
+ }
+
+ .login__or p::before, .login__or p::after{
+     content: "";
+     flex: 1 1;
+     border-bottom: 1px solid rgba(83, 100,113,0.5);
+     margin: auto;
+ }
+ .login__or p::before{
+     margin-right: 10px;
+ }
+
+ .login__or p::after{
+     margin-left: 10px;
+ }
+ .login__Apple button{
+     font-weight: bold;
+     font-family: TwitterChirp;
+ }
+
+ .loginPage__rightSide div{
+     display: grid;
+ }
+
+ .loginPage__rightSide p{
+     color: rgb(0, 0, 0);
+ }
+
+ .login__Google button{
+     font-family: "Google sans", arial, sans-serif;
+     color: #3c4043;
+     font-size: 14px;
+     letter-spacing: 0.25px;
+     font-weight: 500;
+ }
+
+ #signin__phone{
+        background-color: #1d9bf0;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-family: TwitterChirp;
+        font-size: 15px;
+        margin-left: 100px;
+ }
+
+ .login__agree p {
+     font-size: 11px;
+     color: #71767b;
+     font-family: TwitterChirp;
+     margin-left: 106px;
+
+ }
+
+ .login__alreadyAccount p{
+     font-family: TwitterChirp;
+     font-size: 17px;
+     color: #006192;
+     font-weight: bold;
+     margin-left: 150px;
+ }
+
+ #signInBtn{
+     background-color: transparent;
+     border: 1px solid;
+     font-family: TwitterChirp;
+     color: #1d9bf0;
+     font-size: 15px;
+     font-weight: bold;
+     border-color: rgb(83,100,113);
+     margin-left: 100px;
+     margin-bottom: 10px; 
+    }
+
+ #customBtn{
+     display: inline-block;
+     background: rgb(92, 148, 253);
+     color: #444;
+     width: 265px;
+     height: 40px;
+     padding: 0px 16px;
+     border-radius: 30px;
+     text-align: center;
+ }
+
+ span.buttonText{
+     display: inline-block;
+     vertical-align: middle;
+     margin-left: -10px;
+     letter-spacing: 0.25px;
+     font-size: 20px;
+     white-space: nowrap;
+     font-family: sans-serif;
+ }
+
+ .login__agree a{
+     color: #1d9bf0;
+ }
+
+ /* Styling about section */
+
+ .aboutSection__container{
+     margin-top: 20px;
+     text-align: center;
+ }
+
+ .aboutSection__container a{
+     text-decoration: none;
+     font-family: TwitterChirp;
+     font-size: 13px;
+     color: #71767b;
+     margin-right: 10px;
+ }
+
+ .twitter__Inc{
+     text-align: center;
+     margin-bottom: 20px;
+     margin-top: -5px;
+ }
+
+ .twitter__Inc p{
+     color: #71767b;
+     font-family: TwitterChirp;
+     font-size: 13px;
+ }
