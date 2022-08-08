@@ -52,7 +52,6 @@ const Post = forwardRef(
     };
     const changeLike = async (e) => {
       console.log("entra al click");
-      console.log(JSON.parse(likeStatus));
       if (likeStatus == null || likeStatus == false || likeStatus == "false") {
         console.log("Entra al if");
         localStorage.setItem("likeStatus",JSON.stringify( true));
