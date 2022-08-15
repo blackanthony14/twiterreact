@@ -20,7 +20,7 @@ function Cuentas() {
   useEffect(() => {
     const querySearch = async () => {
       // if (numero == 1) {
-      const res = await axios.get('http://localhost:5000/cuentas');
+      const res = await axios.get('https://twiterbackend.herokuapp.com/cuentas');
       localStorage.setItem("datas1", JSON.stringify(res.data));
       console.log("localStorage de cuentas", JSON.parse(localStorage.getItem("datas1")));
        const dat = JSON.parse(localStorage.getItem("datas1"));

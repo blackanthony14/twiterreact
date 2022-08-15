@@ -14,10 +14,10 @@ function Feed() {
 
   useEffect(() => {
     const querySearch = async () => {
-        const res = await axios("http://localhost:5000/tweets");
+        const res = await axios("https://twiterbackend.herokuapp.com/tweets");
         console.log(res.data);
         setPosts(res.data);
-        const response = await axios.get('http://localhost:5000/cuentas');
+        const response = await axios.get('https://twiterbackend.herokuapp.com/cuentas');
       localStorage.setItem("datas1", JSON.stringify(response.data));
       console.log("localStorage de cuentas", JSON.parse(localStorage.getItem("datas1")));
     };

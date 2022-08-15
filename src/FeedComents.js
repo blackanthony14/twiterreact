@@ -17,7 +17,7 @@ function FeedComents() {
 
   useEffect(() => {
     const querySearch = async () => {
-        const res = await axios(`http://localhost:5000/tweetComents/${coment}`);
+        const res = await axios(`https://twiterbackend.herokuapp.com/tweetComents/${coment}`);
         console.log(res.data.coments);
         setPosts(res.data.coments);
     };

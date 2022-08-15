@@ -32,7 +32,7 @@ function LoginAcount() {
       username: dataC.get("username"),
     });
     const datas = dataC.get("username");
-    const res = await axios.get(`http://localhost:5000/cuentas/${datas}`);
+    const res = await axios.get(`https://twiterbackend.herokuapp.com/cuentas/${datas}`);
     setDatos(res.data);
     console.log(res.data);
     localStorage.clear();

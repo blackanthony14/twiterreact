@@ -58,7 +58,7 @@ const Post = forwardRef(
         setLikeStatus(JSON.parse(localStorage.getItem("likeStatus")));
         console.log(likeStatus);
         const response = await axios.get(
-          `http://localhost:5000/tweetComents/${e}`
+          `https://twiterbackend.herokuapp.com/tweetComents/${e}`
         );
         console.log(response.data.likes);
 
@@ -93,7 +93,7 @@ const Post = forwardRef(
         console.log(likeStatus);
 
         const response = await axios.get(
-          `http://localhost:5000/tweetComents/${e}`
+          `https://twiterbackend.herokuapp.com/tweetComents/${e}`
         );
         console.log(response.data.likes);
 
@@ -150,7 +150,7 @@ const Post = forwardRef(
         const datos = datis;
         console.log(datos);
         const response = await axios.put(
-          `http://localhost:5000/tweetEditLikes/${coment}`,
+          `https://twiterbackend.herokuapp.com/tweetEditLikes/${coment}`,
           datos
         );
         console.log(response.data)
@@ -169,7 +169,7 @@ const Post = forwardRef(
           const datos = datis;
           console.log(datos);
           const response = await axios.put(
-            `http://localhost:5000/tweetEditLikes/${coment}`,
+            `https://twiterbackend.herokuapp.com/tweetEditLikes/${coment}`,
             datos
           );
           console.log(response.data)
@@ -192,7 +192,7 @@ const Post = forwardRef(
           const datos = datis;
           console.log(datos);
           const response = await axios.put(
-            `http://localhost:5000/tweetEditLikes/${coment}`,
+            `https://twiterbackend.herokuapp.com/tweetEditLikes/${coment}`,
             datos
           );
           console.log(response.data)

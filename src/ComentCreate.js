@@ -64,7 +64,7 @@ function ComentCreate() {
     datis.push(tweetMessage);
     const datos = datis;
     const response = await axios.put(
-      `http://localhost:5000/tweetEdit/${coment}`,
+      `https://twiterbackend.herokuapp.com/tweetEdit/${coment}`,
       datos
     );
     console.log(response.data);

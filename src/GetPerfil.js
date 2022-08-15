@@ -23,7 +23,7 @@ function GetPerfil() {
       if(numero == 1){
         for (var i=0; i<favi.tweets.length; i++) {
           let number = favi.tweets[i]
-           const res = await axios.get(`http://localhost:5000/tweetsId/${number}`);
+           const res = await axios.get(`https://twiterbackend.herokuapp.com/tweetsId/${number}`);
           array.push(res.data)
           numero = numero +1
           }

@@ -31,7 +31,7 @@ const PostCuentas = forwardRef((
       setLikeStatus(localStorage.getItem("likeStatus"));
       console.log(likeStatus);
       const response = await axios.get(
-        `http://localhost:5000/cuentasGet/${e}`
+        `https://twiterbackend.herokuapp.com/cuentasGet/${e}`
       );
       console.log(response.data.followers);
       console.log(response.data.id)
@@ -47,7 +47,7 @@ const PostCuentas = forwardRef((
       console.log(likeStatus);
 
       const response = await axios.get(
-        `http://localhost:5000/cuentasGet/${e}`
+        `https://twiterbackend.herokuapp.com/cuentasGet/${e}`
       );
       console.log(response.data.followers);
       setCuenta(response.data.id)
@@ -70,7 +70,7 @@ const actualizarLikes = async (nums) => {
       const datos = datis;
       console.log(datos);
       const response = await axios.put(
-        `http://localhost:5000/setFollowers/${valor}`,
+        `https://twiterbackend.herokuapp.com/setFollowers/${valor}`,
         datos
       );
       console.log(response.data)
@@ -89,7 +89,7 @@ const actualizarLikes = async (nums) => {
         const datos = datis;
         console.log(datos);
         const response = await axios.put(
-          `http://localhost:5000/setFollowers/${valor}`,
+          `https://twiterbackend.herokuapp.com/setFollowers/${valor}`,
           datos
         );
         console.log(response.data)
@@ -107,7 +107,7 @@ const actualizarLikes = async (nums) => {
           const datos = datis;
           console.log(datos);
           const response = await axios.put(
-            `http://localhost:5000/setFollowers/${valor}`,
+            `https://twiterbackend.herokuapp.com/setFollowers/${valor}`,
             datos
           );
           console.log(response.data)

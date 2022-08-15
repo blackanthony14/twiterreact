@@ -41,7 +41,7 @@ function CreateAcount() {
         "avatar": data.get("avatar")
     }
     const res = await axios
-          .post("http://localhost:5000/createAcount", datas)
+          .post("https://twiterbackend.herokuapp.com/createAcount", datas)
           .then((res) => {
             // callback(null);
             console.log(res)
