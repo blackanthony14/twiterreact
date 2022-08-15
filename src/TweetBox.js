@@ -69,7 +69,7 @@ function TweetBox() {
     favi.tweets.push(num)
       const datos = favi.tweets
       const response = await axios
-      .put(`http://localhost:5000/cuentaEdit/${favi.id}`,datos)
+      .put(`https://twiterbackend.herokuapp.com/cuentaEdit/${favi.id}`,datos)
       .then((response) => {
         console.log(response.data)
         setDatos(response.data)
