@@ -49,7 +49,7 @@ function TweetBox() {
       };
 
       const res = await axios
-      .post("http://localhost:5000/createTweet", data)
+      .post("https://twiterbackend.herokuapp.com/createTweet", data)
       .then((res) => {
         console.log(res.data);
         putTweet(res.data.id)
